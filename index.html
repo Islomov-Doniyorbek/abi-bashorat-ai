@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI University Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🎓 AI University Predictor</h1>
+
+  <div class="layout">
+
+    <!-- LEFT: FORMA -->
+    <div class="card">
+
+      <label>DTM bali</label>
+      <div class="score-row">
+        <input type="number" id="score" placeholder="Masalan: 165" />
+        <div class="score-badge" id="scoreBadge">— ball</div>
+      </div>
+
+      <div id="universities"></div>
+
+      <button id="addUniversity">＋ Universitet qo'shish</button>
+      <button class="primary" id="predictBtn">✦ Bashorat qilish</button>
+      <button class="danger" id="clearBtn">✕ Tozalash</button>
+
+    </div>
+
+    <!-- RIGHT: NATIJALAR -->
+    <div class="card">
+      <div class="results" id="result-item">
+        <h2>📊 Natijalar</h2>
+        <div class="empty-state">Ma'lumot kiriting va bashorat tugmasini bosing</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="db.js"></script>
+<script src="ai.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
